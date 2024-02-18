@@ -1,0 +1,79 @@
+name: Lang And zs To ParaTranz
+
+on:
+  issues:
+    types: [ opened ]
+
+env:
+  PARATRANZ_TOKEN: ${{ secrets.PARATRANZ_TOKEN }}
+  PARATRANZ_PROJECT_ID: ${{ secrets.PARATRANZ_PROJECT_ID }}
+  TARGET_LANG: pt_BR
+
+jobs:
+  check-and-parse-issue:
+    if: contains(github.event.issue.labels.*.name, 'Automação:lang+zs→paratranz')
+    name: Check And Parse Issue
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout MuXiu1997/GTNH-translation-compare
+        uses: actions/checkout@v3
+        with:
+          repository: MuXiu1997/GTNH-translation-compare
+          ref: main
+      - name: Ensure Dependencies
+        uses: ./.github/actions/ensure-dependencies
+      - name: Run Script
+        id: check-and-parse-issue
+        env:
+          GITHUB_ISSUE: ${{ toJSON(github.event.issue) }}
+          VALID_LABEL: Automação:lang+zs→paratranz
+          VALID_USER: ${{ github.repository_owner }}
+        run: |
+          poetry run python main.py parse-issue lang-and-zs-to-paratranz
+    outputs:
+      passed: ${{ steps.check-and-parse-issue.outputs.passed }}
+      modpack-url: ${{ steps.check-and-parse-issue.outputs.modpack-url }}
+
+  close-issue:
+    name: Close Issue
+    needs: check-and-parse-issue
+    if: ${{ needs.check-and-parse-issue.outputs.passed != 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close Issue
+        run: gh issue close "${ISSUE_URL}" --comment "Este template foi fechado automaticamente pois deve ser usado somente para uso interno."
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+
+  lang-and-zs-to-paratranz:
+    name: Lang And zs To ParaTranz
+    needs: check-and-parse-issue
+    if: ${{ needs.check-and-parse-issue.outputs.passed == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout MuXiu1997/GTNH-translation-compare
+        uses: actions/checkout@v3
+        with:
+          repository: MuXiu1997/GTNH-translation-compare
+          ref: main
+      - name: Ensure Dependencies
+        uses: ./.github/actions/ensure-dependencies
+      - name: Ensure .temp
+        run: mkdir -p .temp
+      - name: Ensure Modpack
+        id: ensure--modpack
+        uses: ./.github/actions/ensure-modpack
+        with:
+          dir: .temp
+          url: ${{ needs.check-and-parse-issue.outputs.modpack-url }}
+          name: modpack
+      - name: Run Script
+        run: >-
+          poetry run python main.py action lang-and-zs-to-paratranz
+          --modpack-path='.temp/modpack'
+      - name: Close Issue
+        run: gh issue close "${ISSUE_URL}" --comment "Sincronizado ao ParaTranz automaticamente."
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}

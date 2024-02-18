@@ -1,0 +1,87 @@
+name: Nightly Build
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 23 * * *' # 23:30 UTC == 20:30 UTC-3, todos os dias.
+.
+env:
+  PARATRANZ_TOKEN: ${{ secrets.PARATRANZ_TOKEN }}
+  PARATRANZ_PROJECT_ID: ${{ secrets.PARATRANZ_PROJECT_ID }}
+  TARGET_LANG: pt_BR
+
+jobs:
+  nightly-build:
+    name: Nightly Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get current date
+        id: date
+        shell: bash
+        run: |
+          echo "today=$(TZ=UTC-3 date --iso-8601)+${{ github.run_number }}" >> "$GITHUB_OUTPUT"
+      - name: Checkout MuXiu1997/GTNH-translation-compare
+        uses: actions/checkout@v3
+        with:
+          repository: MuXiu1997/GTNH-translation-compare
+          ref: main
+      - name: Ensure Dependencies
+        uses: ./.github/actions/ensure-dependencies
+      - name: Checkout Work Repo
+        uses: actions/checkout@v3
+        with:
+          path: 'repo'
+
+      - name: ParaTranz To Quest Book
+        run: >-
+          poetry run python main.py action paratranz-to-quest-book
+          --repo-path='repo'
+          --commit-message='[Automatizado] Atualizar Missões.'
+      - name: ParaTranz To Lang And zs
+        run: >-
+          poetry run python main.py action paratranz-to-lang-and-zs
+          --repo-path='repo'
+          --commit-message='[Automatizado] Atualizar mods e scripts.'
+      - name: ParaTranz To GT Lang
+        run: >-
+          poetry run python main.py action paratranz-to-gt-lang
+          --repo-path='repo'
+          --commit-message='[Automatizado] Atualizar GregTech.lang.'
+
+      - name: Ensure temp dir
+        run: mkdir -p temp
+      - name: Ensure assets dir
+        run: mkdir -p assets
+      - name: Pack
+        run: python repo/.github/scripts/pack.py
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: GTNH-Portuguese-Translation-Nightly-${{ steps.date.outputs.today }}
+          path: ./temp/
+      - name: Zip
+        run: |
+          cd temp
+          zip -r ../assets/GTNH-Portuguese-Translation-Nightly-${{ steps.date.outputs.today }}.zip ./*
+          cd ..
+      - name: Push tag
+        run: |
+          cd repo
+          git push -d origin latest || :
+          gh release delete latest || :
+          git tag latest
+          git push origin latest
+          cd ..
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Release as Latest
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: latest
+          name: Latest
+          body: |
+            Por favor, leia o README para instruções de uso.
+          files: |
+            ./assets/GTNH-Portuguese-Translation-Nightly-${{ steps.date.outputs.today }}.zip
+          token: ${{ secrets.GITHUB_TOKEN }}

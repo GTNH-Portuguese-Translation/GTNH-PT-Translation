@@ -1,0 +1,84 @@
+name: ParaTranz To Quest Book
+
+on:
+  issues:
+    types: [ opened ]
+
+env:
+  PARATRANZ_TOKEN: ${{ secrets.PARATRANZ_TOKEN }}
+  PARATRANZ_PROJECT_ID: ${{ secrets.PARATRANZ_PROJECT_ID }}
+  TARGET_LANG: pt_BR
+
+jobs:
+  check-and-parse-issue:
+    if: contains(github.event.issue.labels.*.name, 'Automação:paratranz→questbook')
+    name: Check And Parse Issue
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout MuXiu1997/GTNH-translation-compare
+        uses: actions/checkout@v3
+        with:
+          repository: MuXiu1997/GTNH-translation-compare
+          ref: main
+      - name: Ensure Dependencies
+        uses: ./.github/actions/ensure-dependencies
+      - name: Run Script
+        id: check-and-parse-issue
+        env:
+          GITHUB_ISSUE: ${{ toJSON(github.event.issue) }}
+          VALID_LABEL: Automação:paratranz→questbook
+          VALID_USER: ${{ github.repository_owner }}
+        run: |
+          poetry run python main.py parse-issue paratranz-to-quest-book
+    outputs:
+      passed: ${{ steps.check-and-parse-issue.outputs.passed }}
+      branch: ${{ steps.check-and-parse-issue.outputs.branch }}
+
+  close-issue:
+    name: Close Issue
+    needs: check-and-parse-issue
+    if: ${{ needs.check-and-parse-issue.outputs.passed != 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Close Issue
+        run: gh issue close "${ISSUE_URL}" --comment "Este template foi fechado automaticamente pois deve ser usado somente para uso interno."
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+
+  paratranz-to-quest-book:
+    name: ParaTranz To Quest Book
+    needs: check-and-parse-issue
+    if: ${{ needs.check-and-parse-issue.outputs.passed == 'true' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout MuXiu1997/GTNH-translation-compare
+        uses: actions/checkout@v3
+        with:
+          repository: MuXiu1997/GTNH-translation-compare
+          ref: main
+      - name: Ensure Dependencies
+        uses: ./.github/actions/ensure-dependencies
+      - name: Checkout Work Repo
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ needs.check-and-parse-issue.outputs.branch }}
+          path: '.repo'
+      - name: Run Script
+        run: >-
+          poetry run python main.py action paratranz-to-quest-book
+          --repo-path='.repo'
+          --issue='${{ github.event.issue.number }}'
+          --commit-message='[Automatizado] Atualizar Missões.'
+      - name: Create PR
+        uses: peter-evans/create-pull-request@v4.0.0
+        with:
+          title: '[Automatizado] Atualizar Missões.'
+          labels: |
+            Automação:paratranz→questbook
+          body: |
+            Ativado por #${{ github.event.issue.number }} 
+          base: ${{ needs.check-and-parse-issue.outputs.branch }}
+          branch: automation/compare/${{ github.event.issue.number }}
+          path: '.repo'
+          delete-branch: true
