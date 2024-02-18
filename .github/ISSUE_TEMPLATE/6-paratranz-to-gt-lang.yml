@@ -1,0 +1,13 @@
+---
+name: Geração do GregTech.lang usando o ParaTranz.
+description: Gera o GregTech.lang usando o ParaTranz e cria o PR com update (uso interno).
+
+labels: [ 'Automação:paratranz→gt-lang' ]
+
+body:
+  - type: input
+    id: branch
+    attributes:
+      label: Especifique a branch.
+    validations:
+      required: true

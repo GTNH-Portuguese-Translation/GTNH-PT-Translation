@@ -1,0 +1,13 @@
+---
+name: Análise dos arquivos de linguagem no ParaTranz e recebimento.
+description: Analisa e extrai os arquivos .lang do ParaTranz e faz o PR para update (uso interno).
+
+labels: [ '自動化:paratranz→lang+zs' ]
+
+body:
+  - type: input
+    id: branch
+    attributes:
+      label: Especifique a branch.
+    validations:
+      required: true

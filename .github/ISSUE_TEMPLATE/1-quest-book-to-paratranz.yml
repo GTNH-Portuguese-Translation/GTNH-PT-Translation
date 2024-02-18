@@ -1,0 +1,15 @@
+---
+name: Análise do livro de missões e envio ao ParaTranz.
+
+description: Analisa o livro de missões e envia ao ParaTranz (内部専用).
+
+labels: [ 'Automação:questbook→paratranz' ]
+
+body:
+  - type: input
+    id: commit-sha
+    attributes:
+      label: ID do commit do arquivo .lang do Livro de Missões
+      value: 'master'
+    validations:
+      required: false

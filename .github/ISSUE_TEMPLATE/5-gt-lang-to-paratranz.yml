@@ -1,0 +1,12 @@
+---
+name: Análise do Gregtech.lang e envio ao Paratranz.
+description: Analisa o Gregtech.lang e manda-o ao Paratranz (uso interno).
+labels: [ 'Automação:gt-lang→paratranz' ]
+
+body:
+  - type: input
+    id: gt-lang-url
+    attributes:
+      label: GregTech.lang@url
+    validations:
+      required: true

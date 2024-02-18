@@ -1,0 +1,13 @@
+---
+name: Extração os arquivos de linguagem dos mods e envio ao ParaTranz.
+description: Extrai os arquivos de linguagem dos mods e envia ao ParaTranz (uso interno).
+
+labels: [ 'Automação:lang+zs→paratranz' ]
+
+body:
+  - type: input
+    id: modpack-url
+    attributes:
+      label: modpack@URL
+    validations:
+      required: true

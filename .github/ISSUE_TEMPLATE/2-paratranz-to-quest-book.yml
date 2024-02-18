@@ -1,0 +1,13 @@
+---
+name: Recepção dos arquivos do ParaTranz para o Livro de Missões.
+description: Recebe os arquivos do ParaTranz, usa-os para o Livro de Missões, e cria o PR. (uso interno).
+
+labels: [ 'Automação:paratranz→questbook' ]
+
+body:
+  - type: input
+    id: branch
+    attributes:
+      label: Especifique a branch.
+    validations:
+      required: true
