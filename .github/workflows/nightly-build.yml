@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '30 23 * * *' # 23:30 UTC == 20:30 UTC-3, todos os dias.
-.
+
 env:
   PARATRANZ_TOKEN: ${{ secrets.PARATRANZ_TOKEN }}
   PARATRANZ_PROJECT_ID: ${{ secrets.PARATRANZ_PROJECT_ID }}
