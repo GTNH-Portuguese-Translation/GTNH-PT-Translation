@@ -1,7 +1,7 @@
 ---
 name: Análise do livro de missões e envio ao ParaTranz.
 
-description: Analisa o livro de missões e envia ao ParaTranz (内部専用).
+description: Analisa o livro de missões e envia ao ParaTranz (uso interno).
 
 labels: [ 'Automação:questbook→paratranz' ]
 
