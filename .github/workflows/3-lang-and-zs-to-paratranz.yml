@@ -15,10 +15,10 @@ jobs:
     name: Check And Parse Issue
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout MuXiu1997/GTNH-translation-compare
+      - name: Checkout GTNH-Portuguese-Translation/GTNH-translation-compare-portuguese
         uses: actions/checkout@v3
         with:
-          repository: MuXiu1997/GTNH-translation-compare
+          repository: GTNH-Portuguese-Translation/GTNH-translation-compare-portuguese
           ref: main
       - name: Ensure Dependencies
         uses: ./.github/actions/ensure-dependencies
@@ -52,10 +52,10 @@ jobs:
     if: ${{ needs.check-and-parse-issue.outputs.passed == 'true' }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout MuXiu1997/GTNH-translation-compare
+      - name: Checkout GTNH-Portuguese-Translation/GTNH-translation-compare-portuguese
         uses: actions/checkout@v3
         with:
-          repository: MuXiu1997/GTNH-translation-compare
+          repository: GTNH-Portuguese-Translation/GTNH-translation-compare-portuguese
           ref: main
       - name: Ensure Dependencies
         uses: ./.github/actions/ensure-dependencies
