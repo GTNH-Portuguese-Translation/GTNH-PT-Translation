@@ -20,10 +20,10 @@ jobs:
         shell: bash
         run: |
           echo "today=$(TZ=UTC-3 date --iso-8601)+${{ github.run_number }}" >> "$GITHUB_OUTPUT"
-      - name: Checkout MuXiu1997/GTNH-translation-compare
+      - name: Checkout GTNH-Portuguese-Translation/GTNH-translation-compare-portuguese
         uses: actions/checkout@v3
         with:
-          repository: MuXiu1997/GTNH-translation-compare
+          repository: GTNH-Portuguese-Translation/GTNH-translation-compare-portuguese
           ref: main
       - name: Ensure Dependencies
         uses: ./.github/actions/ensure-dependencies
