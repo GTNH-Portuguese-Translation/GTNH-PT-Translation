@@ -1,0 +1,7 @@
+tile.architecturecraft:sawbench.name=Bancada do Arquiteto
+tile.architecturecraft:shape.name=Bloco Arquitetônico
+item.architecturecraft:largePulley.name=Polia Grande
+item.architecturecraft:sawblade.name=Serra Circular
+item.architecturecraft:chisel.name=Cinzel do Arquiteto
+item.architecturecraft:hammer.name=Martelo do Arquiteto
+item.architecturecraft:cladding.name=Revestimento
