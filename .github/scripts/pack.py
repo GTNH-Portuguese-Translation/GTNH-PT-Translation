@@ -3,7 +3,6 @@ from os import path
 
 paths_to_be_packed = [
     'config',
-    'mods',
     'resources',
     'GregTech.lang',
     'GregTech_US.lang',
