@@ -144,7 +144,7 @@
 			}
 		},
 		"language": {
-			"text": "Idiomas",
+			"text": "Idioma",
 			"hoverText": "Mude para pt-br para ativar",
 			"normalTextColor": 4227327,
 			"hoverTextColor": 16758315,
@@ -199,26 +199,25 @@
 	"texts": {
 		"mojang": {
 			"text": "Forge #forgeversion# for Minecraft #mcversion# - Copyright Mojang AB. Do not distribute!",
-			"posX": 305,
+			"posX": 155,
 			"posY": 10,
 			"alignment": "column_bottom"
 		},
 		"version": {
 			"text": "file:mainmenu:version.txt",
-			"posX": 305,
+			"posX": 155,
 			"posY": 0,
-			"alignment": "column_bottom"
-		},
-		"aviators": {
-			"text": "Opening Music Copyright by the Aviators",
-			"posX": 305,
-			"posY": -10,
-			"fontSize": 0.5,
 			"alignment": "column_bottom"
 		},
 		"traducao": {
 			"text": "Tradução para o português por IcaroK, maniifestantes",
 			"posX": 155,
+			"posY": -10,
+			"alignment": "column_bottom"
+		},
+		"aviators": {
+			"text": "Opening Music Copyright by the Aviators",
+			"posX": 150,
 			"posY": -20,
 			"fontSize": 0.5,
 			"alignment": "column_bottom"

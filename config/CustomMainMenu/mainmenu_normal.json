@@ -143,6 +143,24 @@
 				"gui": "options"
 			}
 		},
+		"language": {
+			"text": "Idioma",
+			"hoverText":"Mude para pt-br para ativar",
+			"normalTextColor": 4227327,
+			"hoverTextColor": 16758315,
+			"texture": "mainmenu:textures/btn4.png",
+			"posX": 0,
+			"posY": -60,
+			"width": 150,
+			"height": 20,
+			"imageWidth": 1000,
+			"imageHeight": 1,
+			"alignment": "column_bottom",
+			"action": {
+				"type": "openGui",
+				"gui": "languages"
+			}
+		},
 		"mods": {
 			"text": "Mods (#modsloaded#/#modsactive#)",
 			"normalTextColor": 2113664,
@@ -191,20 +209,19 @@
 			"posY": 0,
 			"alignment": "column_bottom"
 		},
-		"aviators": {
-			"text": "Opening Music Copyright by the Aviators",
-			"posX": 155,
-			"posY": -10,
-			"fontSize": 0.5,
-			"alignment": "column_bottom"
-		},
 		"traducao": {
 			"text": "Tradução para o português por IcaroK, maniifestantes",
 			"posX": 155,
+			"posY": -10,
+			"alignment": "column_bottom"
+		},
+		"aviators": {
+			"text": "Opening Music Copyright by the Aviators",
+			"posX": 150,
 			"posY": -20,
 			"fontSize": 0.5,
 			"alignment": "column_bottom"
-		}
+		}	
 
 	},
 	"alignments": {

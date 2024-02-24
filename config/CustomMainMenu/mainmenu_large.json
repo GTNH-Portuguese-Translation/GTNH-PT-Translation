@@ -209,20 +209,19 @@
 			"posY": 0,
 			"alignment": "column_bottom"
 		},
-		"aviators": {
-			"text": "Opening Music Copyright by the Aviators",
-			"posX": 155,
-			"posY": -10,
-			"fontSize": 0.5,
-			"alignment": "column_bottom"
-		},
 		"traducao": {
 			"text": "Tradução para o português por IcaroK, maniifestantes",
 			"posX": 155,
+			"posY": -10,
+			"alignment": "column_bottom"
+		},
+		"aviators": {
+			"text": "Opening Music Copyright by the Aviators",
+			"posX": 150,
 			"posY": -20,
 			"fontSize": 0.5,
 			"alignment": "column_bottom"
-		}		
+		}	
 	},
 	"alignments": {
 		"column_top": {
