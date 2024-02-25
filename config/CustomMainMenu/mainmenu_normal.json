@@ -216,10 +216,9 @@
 			"alignment": "column_bottom"
 		},
 		"aviators": {
-			"text": "Opening Music Copyright by the Aviators",
+			"text": "Cover em PT-BR da Música Tema cantada por Jeff Waysti, Original por The Aviators",
 			"posX": 155,
 			"posY": -20,
-			"fontSize": 0.5,
 			"alignment": "column_bottom"
 		}	
 
