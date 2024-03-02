@@ -1,80 +1,80 @@
 # ==== BLOCKS ====
 
-tile.gendustry.mutagen_producer.name=Mutagen Producer
+tile.gendustry.mutagen_producer.name=Produtor de Mutagênio
 tile.gendustry.mutatron.name=Mutatron
-tile.gendustry.mutatron_adv.name=Advanced Mutatron
-tile.gendustry.apiary.name=Industrial Apiary
+tile.gendustry.mutatron_adv.name=Mutatron Avançado
+tile.gendustry.apiary.name=Apiário Industrial 
 tile.gendustry.imprinter.name=Genetic Imprinter
-tile.gendustry.sampler.name=Genetic Sampler
-tile.gendustry.extractor.name=DNA Extractor
-tile.gendustry.liquifier.name=Protein Liquifier
-tile.gendustry.replicator.name=Genetic Replicator
+tile.gendustry.sampler.name=Amostrador Genético
+tile.gendustry.extractor.name=Extrator de DNA
+tile.gendustry.liquifier.name=Liquidificador de Proteína 
+tile.gendustry.replicator.name=Replicador Genético 
 tile.gendustry.transposer.name=Genetic Transposer
 
 # ==== GENERAL ITEMS ====
 
-item.gendustry.MutagenTank.name=Mutagen Tank
+item.gendustry.MutagenTank.name=Tanque de Mutagênio 
 item.gendustry.BeeReceptacle.name=Bee Receptacle
-item.gendustry.PowerModule.name=Power Module
-item.gendustry.GeneticsProcessor.name=Genetics Processor
-item.gendustry.EnvProcessor.name=Enviromental Processor
+item.gendustry.PowerModule.name=Módulo de Energia 
+item.gendustry.GeneticsProcessor.name=Processador de Genética 
+item.gendustry.EnvProcessor.name=Processador Ambiental 
 item.gendustry.UpgradeFrame.name=Upgrade Frame
-item.gendustry.ClimateModule.name=Climate Control Module
-item.gendustry.Labware.name=Genetics Labware
-item.gendustry.GeneSample.name=Gene Sample
-item.gendustry.GeneTemplate.name=Genetic Template
-item.gendustry.GeneSampleBlank.name=Blank Gene Sample
-item.gendustry.Waste.name=Genetic Waste
+item.gendustry.ClimateModule.name=Módulo de Controle Climático
+item.gendustry.Labware.name=Vidraria de Laboratório de Genética 
+item.gendustry.GeneSample.name=Amostra de Gene
+item.gendustry.GeneTemplate.name=Modelo Genético 
+item.gendustry.GeneSampleBlank.name=Amostra de Gene em Branco
+item.gendustry.Waste.name=Resíduo Genético
 item.gendustry.grafter.name=Industrial Grafter
 item.gendustry.scoop.name=Scooporator MX200 Turbo
-item.gendustry.ImportCover.name=Item Import Cover
-item.gendustry.EjectCover.name=Item Eject Cover
+item.gendustry.ImportCover.name=Tampa de Importação de Itens 
+item.gendustry.EjectCover.name=Tampa de Ejeto de Itens
 item.gendustry.ErrorSensorCover.name=Error Sensor Cover
-item.gendustry.PollenKit.name=Pollen Collection Kit
+item.gendustry.PollenKit.name=Kit de Coleção de Pólen 
 item.gendustry.HiveSpawnDebugger.name=Hive Spawning Debugger
 
 # ==== FLUIDS ====
 
-fluid.gendustry.mutagen=Mutagen
-fluid.gendustry.liquiddna=Liquid DNA
-fluid.gendustry.protein=Protein
+fluid.gendustry.mutagen=Mutagênio
+fluid.gendustry.liquiddna=DNA Líquido 
+fluid.gendustry.protein=Proteína 
 
-tile.gendustry.mutagen.name=Mutagen
-tile.gendustry.liquiddna.name=Liquid DNA
-tile.gendustry.protein.name=Protein
+tile.gendustry.mutagen.name=Mutagênio
+tile.gendustry.liquiddna.name=DNA Líquido 
+tile.gendustry.protein.name=Proteína 
 
 # ==== FLUID CONTAINERS ====
 
-item.gendustry.mutagen.bucket.name=Mutagen Bucket
-item.gendustry.mutagen.can.name=Mutagen Can
-item.gendustry.liquiddna.bucket.name=Liquid DNA Bucket
-item.gendustry.liquiddna.can.name=Liquid DNA Can
-item.gendustry.protein.bucket.name=Protein Bucket
-item.gendustry.protein.can.name=Protein Can
+item.gendustry.mutagen.bucket.name=Balde de Mutagênio
+item.gendustry.mutagen.can.name=Lata de Mutagênio
+item.gendustry.liquiddna.bucket.name=Balde de DNA Líquido 
+item.gendustry.liquiddna.can.name=Lata de DNA Líquido 
+item.gendustry.protein.bucket.name=Balde de Proteína 
+item.gendustry.protein.can.name=Lata de Proteína 
 
 
 # ==== UPGRADES ====
 
-gendustry.upgrades.prod.name=Production Upgrade
-gendustry.upgrades.life.name=Lifespan Upgrade
+gendustry.upgrades.prod.name=Aprimoramento de Produção 
+gendustry.upgrades.life.name=Aprimoramento de Tempo de Vida
 gendustry.upgrades.flowering.name=Flowering Upgrade
-gendustry.upgrades.territory.name=Territory Upgrade
+gendustry.upgrades.territory.name=Aprimoramento de Território
 gendustry.upgrades.sealing.name=Seal Upgrade
-gendustry.upgrades.light.name=Light Upgrade
-gendustry.upgrades.sky.name=Open Sky Upgrade
-gendustry.upgrades.hell.name=Hell Emulation Upgrade
-gendustry.upgrades.winter.name=Winter Emulation Upgrade
-gendustry.upgrades.auto.name=Automation Upgrade
-gendustry.upgrades.humidifier.name=Humidifier Upgrade
-gendustry.upgrades.dryer.name=Dryer Upgrade
-gendustry.upgrades.heater.name=Heater Upgrade
-gendustry.upgrades.sieve.name=Sieve Upgrade
-gendustry.upgrades.cooler.name=Cooler Upgrade
-gendustry.upgrades.desert.name=Desert Emulation Upgrade
+gendustry.upgrades.light.name=Aprimoramento de Iluminação
+gendustry.upgrades.sky.name=Aprimoramento de Céu Aberto 
+gendustry.upgrades.hell.name=Aprimoramento de Emulação Infernal 
+gendustry.upgrades.winter.name=Aprimoramento de Emulação Invernal 
+gendustry.upgrades.auto.name=Aprimoramento de Automação 
+gendustry.upgrades.humidifier.name=Aprimoramento Umidificador 
+gendustry.upgrades.dryer.name=Aprimoramento Secador
+gendustry.upgrades.heater.name=Aprimoramento Aquecedor 
+gendustry.upgrades.sieve.name=Aprimoramento de Peneira
+gendustry.upgrades.cooler.name=Aprimoramento de Esfriamento
+gendustry.upgrades.desert.name=Aprimoramento de Emulação Desertal
 gendustry.upgrades.plains.name=Plains Emulation Upgrade
 gendustry.upgrades.jungle.name=Jungle Emulation Upgrade
 gendustry.upgrades.ocean.name=Ocean Emulation Upgrade
-gendustry.upgrades.stabilizer.name=Genetic Stabilizer Upgrade
+gendustry.upgrades.stabilizer.name=Aprimoramento de Estabilidade Genética
 gendustry.upgrades.scrubber.name=Pollen Scrubber Upgrade
 
 # ==== GUI AND TOOLTIPS ====

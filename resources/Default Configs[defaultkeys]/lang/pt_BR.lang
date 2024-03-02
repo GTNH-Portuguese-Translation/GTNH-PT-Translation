@@ -1,4 +1,4 @@
-defaultconfigs.cmd.createUpdateFile.failure=§cCould not create modpack-update file (%1$s)
+defaultconfigs.cmd.createUpdateFile.failure=§cNão foi possível criar o arquivo de atualização de modpack (%1$s)
 defaultconfigs.cmd.createUpdateFile.success=§amodpack-update file has been created inside the config directory. You should always ship that file in your modpack; just leave it there forever. This will ensure that local player configs defined in localconfig.txt will be restored on updates.
 defaultconfigs.cmd.saveKeys.failure=§cFailed saving the key configuration. See the log for more information.
 defaultconfigs.cmd.saveKeys.success=§aSuccessfully saved the key configuration.

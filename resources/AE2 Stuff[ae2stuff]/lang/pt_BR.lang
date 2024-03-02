@@ -24,14 +24,14 @@ ae2stuff.gui.lock.note=Se não há processo rodando e o lugar do meio está vazi
 
 ae2stuff.gui.recipes=Receitas
 
-ae2stuff.wireless.tool.empty=Click o Conector Sem Fio para Vincular
+ae2stuff.wireless.tool.empty=Clique o Conector Sem Fio para vincular
 ae2stuff.wireless.tool.bound1=Vinculado a %s,%s,%sa
 ae2stuff.wireless.tool.bound2=Click outro Conector Sem Fio para conectar
 ae2stuff.wireless.tool.connected=Conectado a %s,%s,%s
 ae2stuff.wireless.tool.failed=Conexão falhou 
 ae2stuff.wireless.tool.dimension=Ambos conectores devem estar na mesma dimensão
 ae2stuff.wireless.tool.noexist=Conector vinculado não existe
-ae2stuff.wireless.tool.security.player=Violação de Segurança - Você não tem permissão para modificar essa rede
+ae2stuff.wireless.tool.security.player=Violação de segurança - você não tem permissão para modificar essa rede
 
 ae2stuff.visualiser.bound=Visualizando rede em %s,%s,%s
 ae2stuff.visualiser.mode=Modo:

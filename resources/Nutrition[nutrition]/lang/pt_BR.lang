@@ -1,22 +1,22 @@
 # Keys
-key.nutrition=Open Nutrition GUI
+key.nutrition=Abrir Interface Gráfica de Nutrição
 
 # GUI
-gui.nutrition:nutrition_title=Nutrition
-gui.nutrition:close=Close
-gui.nutrition:updating=Updating...
+gui.nutrition:nutrition_title=Nutrição
+gui.nutrition:close=Fechar
+gui.nutrition:updating=Atualizando...
 
 # Nutrients
-nutrient.nutrition:grain=Grain
-nutrient.nutrition:fruit=Fruit
-nutrient.nutrition:vegetable=Vegetable
-nutrient.nutrition:protein=Protein
-nutrient.nutrition:dairy=Dairy
+nutrient.nutrition:grain=Grãos
+nutrient.nutrition:fruit=Frutas
+nutrient.nutrition:vegetable=Vegetais
+nutrient.nutrition:protein=Proteína
+nutrient.nutrition:dairy=Lacticíneos
 
 # Tooltips
-tooltip.nutrition:nutrients=Nutrients:
+tooltip.nutrition:nutrients=Nutrientes:
 
 # Potions
-potion.nutrition:toughness=Toughness
-potion.nutrition:nourished=Nourished
-potion.nutrition:malnourished=Malnourished
+potion.nutrition:toughness=Dureza
+potion.nutrition:nourished=Nutrido
+potion.nutrition:malnourished=Desnutrido

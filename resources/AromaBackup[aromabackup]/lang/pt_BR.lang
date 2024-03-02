@@ -1,13 +1,13 @@
 #Backup
-aromabackup:backup.start.server=Starting Backup. The server may lag for a bit!
-aromabackup:backup.start.client=Starting Backup. The world may lag for a bit!
-aromabackup:backup.done.server=Server Backup done!
-aromabackup:backup.done.client=World Backup done!
-aromabackup:backup.failed.server=Server Backup failed!
-aromabackup:backup.failed.client=World Backup failed!
-aromabackup:backup.next.server=Next scheduled Backup in %s minutes.
-aromabackup:backup.next.client=Next scheduled Backup in %s minutes.
+aromabackup:backup.start.server=Começando Backup. O servidor pode lagar por um tempinho!
+aromabackup:backup.start.client=Começando Backup. O mundo pode lagar por um tempinho!
+aromabackup:backup.done.server=Backup do Servidor concluído!
+aromabackup:backup.done.client=Backup do Mundo concluído!
+aromabackup:backup.failed.server=Backup do Servidor falhou!
+aromabackup:backup.failed.client=Backup do Mundo falhou!
+aromabackup:backup.next.server=Próximo Backup em %s minutos.
+aromabackup:backup.next.client=Próximo Backup em %s minutos.
 
 #Command
-aromabackup:command.alreadyrunning=A backup is already running.
-aromabackup:command.playerstarted=%s started a backup.
+aromabackup:command.alreadyrunning=Um backup já está sendo feito.
+aromabackup:command.playerstarted=%s começou um backup.

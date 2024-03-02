@@ -1,6 +1,6 @@
-language.name=English
-language.region=US
-language.code=en_US
+language.name=Português
+language.region=BR
+language.code=pt_BR
 
 // Tab Names
 itemGroup.BiblioCraft=BiblioCraft
@@ -35,7 +35,7 @@ gui.clock.solid=Solid
 
 jds.tileentityarmorstand=Armor Stand
 jds.tileentitybookcase=Bookcase
-jds.teclipboard=Clipboard
+jds.teclipboard=Prancheta
 jds.tileentitycookiejar=Cookie Jar
 jds.tileentitywoodlabel=Label
 jds.tileentitygenericshelf=Shelf
@@ -573,7 +573,7 @@ item.BiblioGlasses.tintedglasses.name=Tinted Glasses
 item.BiblioGlasses.monocle.name=Monocle
 item.BiblioDrill.name=Screw Gun
 item.BiblioCreativeLock.name=Lock and Key
-item.BiblioClipboard.name=Clipboard
+item.BiblioClipboard.name=Prancheta
 item.seatBack.OakSeatBack.name=Oak Seat Back
 item.seatBack.SpruceSeatBack.name=Spruce Seat Back
 item.seatBack.BirchSeatBack.name=Birch Seat Back

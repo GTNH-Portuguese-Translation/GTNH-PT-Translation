@@ -1,9 +1,9 @@
-item.backpack.name=Backpack
-item.backpack.medium.name=Middle Backpack
-item.backpack.big.name=Big Backpack
-item.backpack.black.name=Black Backpack
-item.backpack.medium_black.name=Middle Black Backpack
-item.backpack.big_black.name=Big Black Backpack
+item.backpack.name=Mochila
+item.backpack.medium.name=Mochila Média
+item.backpack.big.name=Mochila Grande
+item.backpack.black.name=Mochila Preta
+item.backpack.medium_black.name=Mochila Preta Média
+item.backpack.big_black.name=Mochila Preta Grande
 item.backpack.red.name=Red Backpack
 item.backpack.medium_red.name=Middle Red Backpack
 item.backpack.big_red.name=Big Red Backpack

@@ -88,7 +88,7 @@ betterquesting.gui.yes_always=Sim, sempre
 
 betterquesting.tooltip.tasks_complete=%s/%s Tarefas Completadas
 betterquesting.tooltip.complete=COMPLETADA
-betterquesting.tooltip.incomplete=NÃO COMPLETADA
+betterquesting.tooltip.incomplete=INCOMPLETA
 betterquesting.tooltip.rewards_pending=Recompensas não reclamadas
 betterquesting.tooltip.repeatable=Pode ser repetida
 betterquesting.tooltip.requires=Requer:

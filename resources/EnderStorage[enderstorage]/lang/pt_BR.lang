@@ -1,9 +1,9 @@
-tile.enderchest|0.name=Ender Chest
-tile.enderchest|1.name=Ender Tank
-item.enderpouch.name=Ender Pouch
-enderstorage.serverop=Operator
+tile.enderchest|0.name=Baú do Fim
+tile.enderchest|1.name=Tanque do Fim
+item.enderpouch.name=Pochete do Fim
+enderstorage.serverop=Operador
 
-enderstorage.command.usage=enderstorage <freq>|(<colour> <colour> <colour>) [owner]
-enderstorage.command.no_arguments=Invalid number of arguments
-enderstorage.command.no_freq=Invalid freq
-enderstorage.command.no_colour=Invalid color: %s
+enderstorage.command.usage=enderstorage <frequência>|(<cor> <cor> <cor>) [dono]
+enderstorage.command.no_arguments=Número de argumentos inválido
+enderstorage.command.no_freq=Frequência Inválida
+enderstorage.command.no_colour=Cor inválida: %s

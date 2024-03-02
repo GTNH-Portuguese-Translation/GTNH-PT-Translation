@@ -1,33 +1,33 @@
 # Tooltip strings
-spiceoflife.tooltip.nutritional.value=Nutritional value: 
-spiceoflife.tooltip.eaten.recently=Eaten %s out of the last %d foods
-spiceoflife.tooltip.eaten.recently.hunger=Eaten %s in the last %s hunger
-spiceoflife.tooltip.eaten.recently.time=Eaten %s in the last %s days
-spiceoflife.tooltip.not.eaten.recently=Not eaten recently
+spiceoflife.tooltip.nutritional.value=Valor nutricional:
+spiceoflife.tooltip.eaten.recently=Comido %s das últimas %d comidas
+spiceoflife.tooltip.eaten.recently.hunger=Comido %s na última %s fome
+spiceoflife.tooltip.eaten.recently.time=Comido %s nos últimos %s dias
+spiceoflife.tooltip.not.eaten.recently=Não comido recentimente
 
-spiceoflife.tooltip.not.eaten.ever=Not yet eaten! What does it taste like?
-spiceoflife.tooltip.eaten.ever=Eaten: Assisted in adding hearts 
-spiceoflife.tooltip.eaten.cheap=Eaten: No noticeable effect 
+spiceoflife.tooltip.not.eaten.ever=Não comido ainda! Tem gosto do quê?
+spiceoflife.tooltip.eaten.ever=Comido: Ajuda em adicionar corações
+spiceoflife.tooltip.eaten.cheap=Comido: Sem efeito notável
 
-spiceoflife.tooltip.food.until.enabled.1=Diminishing returns start after
-spiceoflife.tooltip.food.until.enabled.2=eating any food %d more %s
-spiceoflife.tooltip.times.singular=time
-spiceoflife.tooltip.times.plural=times
-spiceoflife.tooltip.hunger=hunger
-spiceoflife.tooltip.food.group=Food Group: 
-spiceoflife.tooltip.food.groups=Food Groups: 
-spiceoflife.tooltip.to.close.food.container=Use while sneaking to close
-spiceoflife.tooltip.to.open.food.container=Use while sneaking to open
-spiceoflife.tooltip.can.spill.food=Food can spill out while open
-spiceoflife.tooltip.hold.key.for.details=Hold %s for details
+spiceoflife.tooltip.food.until.enabled.1=Retornos menores começam após
+spiceoflife.tooltip.food.until.enabled.2=comendo qualquer comida %d mais que %s
+spiceoflife.tooltip.times.singular=tempo
+spiceoflife.tooltip.times.plural=vezes
+spiceoflife.tooltip.hunger=fome
+spiceoflife.tooltip.food.group=Grupo Alimentar:
+spiceoflife.tooltip.food.groups=Grupos Alimentares:
+spiceoflife.tooltip.to.close.food.container=Use enquanto agachado para fechar
+spiceoflife.tooltip.to.open.food.container=Use enquanto agachado para abrir
+spiceoflife.tooltip.can.spill.food=Comida pode cair no chão enquanto aberta
+spiceoflife.tooltip.hold.key.for.details=Segure %s para detalhes
 
 # Quantity descriptors
-spiceoflife.quantity.one.time=once
-spiceoflife.quantity.two.times=twice
-spiceoflife.quantity.x.times=%d times
+spiceoflife.quantity.one.time=uma vez
+spiceoflife.quantity.two.times=duas vezes
+spiceoflife.quantity.x.times=%d vezes
 
 # Gui
-spiceoflife.gui.alltime.food.eaten=All-time food eaten
+spiceoflife.gui.alltime.food.eaten=Quantidade de comida até agora:
 spiceoflife.gui.no.food.history.yet=Food history not logged until diminishing returns start
 spiceoflife.gui.no.recent.food.eaten=No food eaten recently
 spiceoflife.gui.time.elapsed.since.food.eaten=Eaten %s ago
@@ -45,5 +45,5 @@ spiceoflife.gui.food_history.next_heart=until next heart:
 
 # Items
 item.spiceoflife.bookfoodjournal.name=Food Journal
-item.spiceoflife.lunchbox.name=Lunch Box
-item.spiceoflife.lunchbag.name=Lunch Bag
+item.spiceoflife.lunchbox.name=Marmita
+item.spiceoflife.lunchbag.name=Lanchinho

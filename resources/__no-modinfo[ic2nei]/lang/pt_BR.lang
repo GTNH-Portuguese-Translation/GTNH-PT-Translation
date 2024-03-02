@@ -1,5 +1,5 @@
 //Expermiental Cases
-expInfo.eatingPlant.name=Plantas carnívoras comem entidades e produzem carne podre. %n biomas de montanha e pantano aceleram o tempo de crescimento. 
+expInfo.eatingPlant.name=Plantas carnívoras comem entidades e produzem carne podre. %n Biomas de montanha e pântano aceleram o tempo de crescimento. 
 
 //Classic Cases
 classicInfo.requiresAir.name=Requer %s blocos de ar ao seu redor para crescer. %n (mesmo nível Y)
